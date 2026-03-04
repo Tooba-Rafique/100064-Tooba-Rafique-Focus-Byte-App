@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Focus Byte</string>
+
+    <string name="powered_by">Powered By : Focus Byte</string>
+
+    <string name="college_name">Government Graduate College Burewala</string>
+
+    <string name="default_status">Working on: None</string>
+</resources>

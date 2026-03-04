@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTaskStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Working on: None"
+        android:textColor="#FFFF00"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="00:00"
+        android:textColor="#FFFFFF"
+        android:textSize="70sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTimer"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btnStart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:backgroundTint="#2ECC71" android:text="START" />
+        <Button android:id="@+id/btnPause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:backgroundTint="#F39C12" android:text="PAUSE" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <Button android:id="@+id/btnSetTime" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="SET" android:backgroundTint="#87CEEB" android:textSize="10sp" android:layout_margin="2dp"/>
+        <Button android:id="@+id/btnBreak" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="BREAK" android:backgroundTint="#800080" android:textSize="10sp" android:layout_margin="2dp"/>
+        <Button android:id="@+id/btnGoTask" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="TASK" android:backgroundTint="#FFFFFF" android:textColor="#000080" android:textSize="10sp" android:layout_margin="2dp"/>
+        <Button android:id="@+id/btnReset" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="RESET" android:backgroundTint="#FF0000" android:textSize="10sp" android:layout_margin="2dp"/>
+    </LinearLayout>
+</RelativeLayout>
